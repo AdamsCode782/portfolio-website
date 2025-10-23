@@ -1,0 +1,62 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Software Developer Portfolio Favicon: Glowing Planet">
+
+  <defs>
+    <!-- Planet gradient -->
+    <radialGradient id="planetGrad" cx="0.45" cy="0.45" r="0.6" fx="0.4" fy="0.4">
+      <stop offset="0%" stop-color="#5A7DD9"/>
+      <stop offset="80%" stop-color="#2B4C99"/>
+      <stop offset="100%" stop-color="#162D66"/>
+    </radialGradient>
+
+    <!-- Highlight -->
+    <radialGradient id="planetHighlight" cx="0.35" cy="0.35" r="0.3" fx="0.35" fy="0.35">
+      <stop offset="0%" stop-color="#B8D0FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#B8D0FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- White glowing ring -->
+    <linearGradient id="ringGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#E6F0FF"/>
+      <stop offset="100%" stop-color="#CBDCFF"/>
+    </linearGradient>
+
+    <!-- Stronger glow filter -->
+    <filter id="ringGlowFilter" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g transform="translate(32,32) scale(2.5)">
+    <!-- Back ring with glow -->
+    <path
+      d="M -12 -1 A 12 5 15 1 1 12 1"
+      fill="none"
+      stroke="url(#ringGlow)"
+      stroke-width="2"
+      stroke-opacity="0.95"
+      filter="url(#ringGlowFilter)"
+    />
+
+    <!-- Planet -->
+    <circle cx="0" cy="0" r="10.2" fill="url(#planetGrad)" />
+
+    <!-- Highlight -->
+    <circle cx="-4" cy="-4" r="5" fill="url(#planetHighlight)" />
+
+    <!-- Front ring with glow -->
+    <path
+      d="M 12 1 A 12 5 15 1 1 -12 -1"
+      fill="none"
+      stroke="url(#ringGlow)"
+      stroke-width="2"
+      stroke-opacity="0.95"
+      filter="url(#ringGlowFilter)"
+    />
+  </g>
+
+</svg>
