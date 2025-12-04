@@ -13,17 +13,50 @@ export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
+    const formData = new FormData(e.target);
+
+    // 🚫 HONEYPOT CHECK — if this field has a value, it's a bot
+    if (formData.get("website")) {
+      console.warn("Spam bot detected — submission blocked.");
       setIsSubmitting(false);
-    }, 1500);
+      return;
+    }
+
+    try {
+      const response = await fetch("https://formspree.io/f/movgljpj", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        e.target.reset();
+      } else {
+        toast({
+          title: "Error",
+          description: "Something went wrong. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Network Error",
+        description: "Please try again later.",
+        variant: "destructive",
+      });
+    }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -44,62 +77,65 @@ export const ContactSection = () => {
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
 
             <div className="space-y-6 w-full">
-  {[
-    {
-      icon: <Mail className="h-6 w-6 text-primary" />,
-      title: "Email",
-      value: (
-        <a
-          href="mailto:asteeledesign@gmail.com"
-          className="text-muted-foreground hover:text-primary transition-colors"
-        >
-          asteeledesign@gmail.com
-        </a>
-      ),
-    },
-    {
-      icon: <Phone className="h-6 w-6 text-primary" />,
-      title: "Phone",
-      value: (
-        <a
-          href="tel:+19172913196"
-          className="text-muted-foreground hover:text-primary transition-colors"
-        >
-          +1 (917) 291-3196
-        </a>
-      ),
-    },
-    {
-      icon: <MapPin className="h-6 w-6 text-primary" />,
-      title: "Location",
-      value: (
-        <span className="text-muted-foreground hover:text-primary transition-colors">
-          New York, NY
-        </span>
-      ),
-    },
-  ].map((item, index) => (
-    <div
-      key={index}
-      className="flex flex-col items-center md:flex-row md:items-center md:space-x-4 w-full justify-center md:justify-start text-center md:text-left"
-    >
-      <div className="p-3 rounded-full bg-primary/10 flex-shrink-0 mb-2 md:mb-0">
-        {item.icon}
-      </div>
-      <div>
-        <h4 className="font-medium">{item.title}</h4>
-        {item.value}
-      </div>
-    </div>
-  ))}
-</div>
-
+              {[
+                {
+                  icon: <Mail className="h-6 w-6 text-primary" />,
+                  title: "Email",
+                  value: (
+                    <a
+                      href="mailto:asteeledesign@gmail.com"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      asteeledesign@gmail.com
+                    </a>
+                  ),
+                },
+                {
+                  icon: <Phone className="h-6 w-6 text-primary" />,
+                  title: "Phone",
+                  value: (
+                    <a
+                      href="tel:+19172913196"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      +1 (917) 291-3196
+                    </a>
+                  ),
+                },
+                {
+                  icon: <MapPin className="h-6 w-6 text-primary" />,
+                  title: "Location",
+                  value: (
+                    <span className="text-muted-foreground hover:text-primary transition-colors">
+                      New York, NY
+                    </span>
+                  ),
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center md:flex-row md:items-center md:space-x-4 w-full justify-center md:justify-start text-center md:text-left"
+                >
+                  <div className="p-3 rounded-full bg-primary/10 flex-shrink-0 mb-2 md:mb-0">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h4 className="font-medium">{item.title}</h4>
+                    {item.value}
+                  </div>
+                </div>
+              ))}
+            </div>
 
             {/* Connect With Me */}
             <div className="pt-8 flex flex-col items-center md:items-start">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4">
-                <a href="https://linkedin.com/in/adam-steele-design" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://linkedin.com/in/adam-steele-design"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Linkedin className="h-6 w-6 text-primary" />
                 </a>
               </div>
@@ -111,6 +147,16 @@ export const ContactSection = () => {
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
             <form className="space-y-6" onSubmit={handleSubmit}>
+              
+              {/* 🍯 Honeypot field — hidden from humans, visible to bots */}
+              <input
+                type="text"
+                name="website"
+                className="hidden"
+                tabIndex="-1"
+                autoComplete="off"
+              />
+
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Your Name
