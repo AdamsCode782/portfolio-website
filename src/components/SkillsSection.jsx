@@ -32,6 +32,7 @@ export const SkillsSection = () => {
   const filteredSkills = skills.filter(
     (skill) => activeCategory === "all" || skill.category === activeCategory
   );
+
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -48,7 +49,7 @@ export const SkillsSection = () => {
                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-forefround hover:bd-secondary"
+                  : "bg-secondary/70 text-foreground hover:bg-secondary"
               )}
             >
               {category}
@@ -56,15 +57,30 @@ export const SkillsSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSkills.map((skill, key) => (
+        {/* Mobile Pills (ONLY mobile) */}
+        <div className="grid grid-cols-2 gap-3 sm:hidden">
+          {filteredSkills.map((skill) => (
             <div
-              key={key}
+              key={skill.name}
+              className="px-3 py-2 rounded-full bg-card border border-primary/20 
+                         text-sm text-center shadow-[0_0_6px_rgba(0,123,255,0.25)]"
+            >
+              {skill.name}
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Cards (hidden on mobile) */}
+        <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          {filteredSkills.map((skill) => (
+            <div
+              key={skill.name}
               className="bg-card p-6 rounded-lg shadow-xs card-hover"
             >
               <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg"> {skill.name}</h3>
+                <h3 className="font-semibold text-lg">{skill.name}</h3>
               </div>
+
               <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
                 <div
                   className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
