@@ -38,7 +38,7 @@ export const AboutSection = () => {
                   Get In Touch
                 </a>
 
-                <a
+                {/* <a
                   href="/Adam_Steele_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -46,7 +46,7 @@ export const AboutSection = () => {
                 >
                   <FileDown className="w-4 h-4" />
                   Download CV
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
