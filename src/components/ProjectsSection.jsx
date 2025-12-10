@@ -58,7 +58,7 @@ const projects = [
     description:
       "A responsive React application that integrates the Google Books API, allowing users to search, save, and manage personalized reading lists.",
     image: "/projects/bookshelf.png",
-    tags: ["React", "API Integration", "JavaScript"],
+    tags: ["React", "API Integration", "JavaScript", "CSS"],
     demoUrl: "https://adamscode782.github.io/bookshelf-react/",
     githubUrl: "https://github.com/AdamsCode782/bookshelf-react",
   },
