@@ -81,23 +81,23 @@ export const HeroSection = () => {
                               <ul className="space-y-3 text-sm">
                                     <li className="flex items-center gap-3">
                                           <span className="w-2 h-2 bg-primary rounded-full inline-block"></span>
-                                          React / JavaScript
+                                          Next.js & TypeScript
                                     </li>
                                     <li className="flex items-center gap-3">
                                           <span className="w-2 h-2 bg-primary rounded-full inline-block"></span>
-                                          Redux / Zustand
+                                          Architectural Design Patterns
                                     </li>
                                     <li className="flex items-center gap-3">
                                           <span className="w-2 h-2 bg-primary rounded-full inline-block"></span>
-                                          REST & GraphQL APIs
+                                          Scalable State Management
                                     </li>
                                     <li className="flex items-center gap-3">
                                           <span className="w-2 h-2 bg-primary rounded-full inline-block"></span>
-                                          Data Visualization (D3, Chart.js)
+                                          Full-Stack API Development
                                     </li>
                                     <li className="flex items-center gap-3">
                                           <span className="w-2 h-2 bg-primary rounded-full inline-block"></span>
-                                          Civic & Gov Tech
+                                          High-Fidelity Data Viz
                                     </li>
                               </ul>
                         </div>
