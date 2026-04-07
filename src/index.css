@@ -55,7 +55,7 @@
     
     /* Primary color (more saturated, deeper for contrast) */
     --primary: 200 75% 36%;
-    --primary-foreground: 0 0% 10%;
+    --primary-foreground: 0 0% 100%;
     
     /* Border (darker for separation) */
     --border: 214 32% 80%;
@@ -67,7 +67,6 @@
     --foreground: 220 15% 92%;
     --card: 230 25% 10%;
     --primary: 180 80% 55%;
-   /* --primary-foreground: 0 0% 98%;*/
     --primary-foreground: 222 47% 11%;
     --border: 225 25% 18%;
   }
