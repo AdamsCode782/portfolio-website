@@ -12,23 +12,22 @@ export const AboutSection = () => {
           {/* Left side - text */}
           <div className="space-y-6 flex flex-col">
             <h3 className="text-2xl font-semibold">
-              Front-End Engineer & Problem Solver
+              Senior Frontend Engineer & Systems Architect
             </h3>
 
             <p className="text-muted-foreground">
-              I'm a senior frontend developer with eight years of experience building accessible, 
-              high-performance web applications, especially in civic tech and government. 
-              I've worked across a wide range of frontend technologies and frameworks, 
-              and I focus on creating clear, dependable user experiences that hold up at scale. 
+              I am a Senior Frontend Engineer with eight years of experience 
+              architecting high-performance, scalable web applications. 
+              My focus is on building robust client-side systems that prioritize type 
+              safety, component modularity, and optimized rendering pipelines. 
+              I specialize in bridging the gap between complex backend services and intuitive, high-fidelity user experiences. 
             </p>
 
             <p className="text-muted-foreground">
-              My work often bridges design and engineering, 
-              and I care deeply about building tools that are both effective and genuinely useful.
-              I enjoy designing intuitive user interfaces, optimizing
-              performance, and writing maintainable code that scales with
-              complexity. I’m always exploring ways to make technology serve
-              people more effectively.
+              I have a proven track record of managing technical complexity at scale, from 
+              refactoring legacy codebases to implementing modern, server-side rendered architectures. 
+              I am deeply invested in engineering excellence—writing maintainable, testable code, 
+              optimizing performance, and building resilient systems that handle high-concurrency data flows.
             </p>
 
             {/* Buttons */}
@@ -59,10 +58,10 @@ export const AboutSection = () => {
                   <Cpu className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Front-End Engineering</h4>
+                  <h4 className="font-semibold text-lg">Next.js & React Architecture</h4>
                   <p className="text-muted-foreground">
-                    Building performant, maintainable interfaces using modern
-                    JavaScript frameworks and reusable component systems.
+                    Architecting modular, type-safe systems. 
+                    I focus on scalable state management, performance and maintainability.
                   </p>
                 </div>
               </div>
@@ -74,10 +73,10 @@ export const AboutSection = () => {
                   <Layers className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Data Visualization</h4>
+                  <h4 className="font-semibold text-lg">High-Performance Data Systems</h4>
                   <p className="text-muted-foreground">
-                    Translating complex datasets into clear, interactive visuals
-                    using charting libraries and mapping tools.
+                    Transforming complex datasets into interactive interfaces. 
+                    I integrate real-time data streams and visualization tools into production dashboards.
                   </p>
                 </div>
               </div>
@@ -89,10 +88,10 @@ export const AboutSection = () => {
                   <Globe className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Civic Technology</h4>
+                  <h4 className="font-semibold text-lg">Full-Stack Integration</h4>
                   <p className="text-muted-foreground">
-                    Partnering with policy teams and public agencies to design
-                    digital tools that make data and services more accessible.
+                    Designing efficient API layers and secure data-fetching strategies. 
+                    I build end-to-end solutions involving schema design, robust authentication, and real-time infrastructure..
                   </p>
                 </div>
               </div>
