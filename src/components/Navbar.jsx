@@ -30,7 +30,7 @@ export const Navbar = () => {
           isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
         )}
       >
-        <div className="container flex items-center justify-between relative z-50">
+        <div className="container flex items-center justify-between relative z-40">
           {/* Logo */}
           <a className="text-xl font-bold flex items-center gap-2" href="#hero">
             <span className="text-glow text-foreground">SteeleDesigns</span>
@@ -70,7 +70,7 @@ export const Navbar = () => {
       {/* Sliding mobile menu */}
       <div
         className={cn(
-          "fixed top-0 right-0 h-full w-64 bg-background/90 backdrop-blur-xl shadow-lg transform transition-transform duration-300 z-40",
+          "fixed top-0 right-0 h-full w-64 bg-background/90 backdrop-blur-xl shadow-lg transform transition-transform duration-300 z-50",
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
