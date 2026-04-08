@@ -66,9 +66,11 @@ export const Navbar = () => {
           </div>
         </div>
             {/* Sliding mobile menu */}
-        <div
+        
+      </nav>
+            <div
         className={cn(
-          "fixed top-0 right-0 h-full w-64 bg-background/90 backdrop-blur-xl shadow-lg transform transition-transform duration-300 z-50",
+          "fixed top-0 right-0 h-full w-64 bg-background/90 backdrop-blur-xl shadow-lg transform transition-transform duration-300 z-40",
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
@@ -85,8 +87,6 @@ export const Navbar = () => {
           ))}
         </div>
       </div>
-      </nav>
-
       
       
     </>
