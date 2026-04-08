@@ -27,7 +27,7 @@ export const Navbar = () => {
       <nav
         className={cn(
           "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-          isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+          (isScrolled || isMenuOpen) ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
         )}
       >
         <div className="container flex items-center justify-between">
@@ -54,7 +54,7 @@ export const Navbar = () => {
           </div>
 
           {/* Mobile nav & toggle */}
-          <div className="flex md:hidden items-center space-x-3">
+          <div className="flex md:hidden items-center gap-5">
            {!isMenuOpen && <ThemeToggle />}
             <button
               onClick={() => setIsMenuOpen((prev) => !prev)}
