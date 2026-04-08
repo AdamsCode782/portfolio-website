@@ -38,22 +38,24 @@ export const HeroSection = () => {
             >
                   {/* Left side: text and buttons */}
                   <div className="md:w-5/12 text-center md:text-left z-10">
-                        <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                              <span className="text-muted-foreground opacity-80 block md:inline animate-fade-in">
-                                    Hi, I'm
-                              </span>{" "}
-                              <span className="text-primary opacity-0 md:inline-block animate-fade-in-delay-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-                                    Adam
-                              </span>{" "}
-                              <span className="text-gradient opacity-0 md:inline-block animate-fade-in-delay-2">
-                                    Steele
+                      
+                        <h1 className="text-3xl sm:text-5xl md:text-5xl font-bold tracking-tight leading-tight">
+                              <span className="text-muted-foreground opacity-80 inline-block animate-fade-in mr-2">
+                              Hi, I'm
+                              </span>
+                              <span className="opacity-0 inline-block animate-fade-in-delay-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 mr-2">
+                              Adam
+                              </span>
+                              <span className="text-gradient opacity-0 inline-block animate-fade-in-delay-2">
+                              Steele
                               </span>
                         </h1>
 
-                        <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-lg mx-auto md:mx-0 opacity-0 animate-fade-in-delay-3">
-                              I build <span className="font-semibold text-primary">{displayedText}</span>
-                              <span className="blinking-caret">|</span> full-stack web applications that balance speed and usability.
-                        </p>
+                        <p className="mt-4 sm:mt-6 text-lg md:text-2xl text-muted-foreground max-w-sm md:max-w-2xl mx-auto md:mx-0 opacity-0 animate-fade-in-delay-3 leading-relaxed">
+  I build <span className="font-semibold text-primary">{displayedText}</span>
+  <span className="blinking-caret">|</span> 
+  <span className="inline"> full-stack web applications that balance speed and usability.</span>
+</p>
 
                         {/* CTA buttons */}
                         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start opacity-0 animate-fade-in-delay-4">
@@ -63,14 +65,7 @@ export const HeroSection = () => {
                               >
                                     View My Work
                               </a>
-                              {/* <a
-                                                                                                                                                                                                                                                                                                                                                                                                  href="/Adam_Steele_Resume.pdf"
-                                                                                                                                                                                                                                                                                                                                                                                                              target="_blank"
-                                                                                                                                                                                                                                                                                                                                                                                                                          rel="noopener noreferrer"
-                                                                                                                                                                                                                                                                                                                                                                                                                                      className="px-6 py-3 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center gap-2 w-full sm:w-auto text-center"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                >
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            Download CV
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </a> */}
+
                         </div>
                   </div>
 
