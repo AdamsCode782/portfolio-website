@@ -18,7 +18,7 @@ const projects = [
     description:
       "A full-stack e-commerce store built with Next.js, complete with Stripe and PayPal integrations, product pages, and responsive storefront design.",
     image: "/projects/ecommerce-01.png",
-    tags: ["Next.js", "React", "Stripe", "PayPal", "TypeScript"],
+    tags: ["Next.js", "React", "Stripe", "PayPal", "TypeScript", "Full-Stack"],
     demoUrl: "https://ecommerce-store-nu-black.vercel.app",
     githubUrl: "https://github.com/AdamsCode782/ecommerce-store",
   },
@@ -82,6 +82,7 @@ const projects = [
       "TypeScript",
       "Prisma",
       "Postgres",
+      "Full-Stack"
     ],
     demoUrl: "",
     githubUrl: "https://github.com/AdamsCode782/timeline-social-app",
