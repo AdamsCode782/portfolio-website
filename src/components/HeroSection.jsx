@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const adjectives = ["intuitive", "accessible", "scalable", "high-performing"];
+const adjectives = ["user-facing", "product-focused", "data-driven", "real world"];
 
 export const HeroSection = () => {
       const [displayedText, setDisplayedText] = useState("");
