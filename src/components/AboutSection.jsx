@@ -12,22 +12,18 @@ export const AboutSection = () => {
           {/* Left side - text */}
           <div className="space-y-6 flex flex-col">
             <h3 className="text-2xl font-semibold">
-              Senior Frontend Engineer & Architect
+              Senior Frontend Engineer
             </h3>
 
             <p className="text-muted-foreground">
-              I am a Senior Frontend Engineer with eight years of experience 
-              architecting high-performance, scalable web applications. 
-              My focus is on building robust client-side systems that prioritize type 
-              safety, component modularity, and optimized rendering pipelines. 
-              I specialize in bridging the gap between complex backend services and intuitive, high-fidelity user experiences. 
+             I am a Senior Frontend Engineer with eight years of experience building high-performance, scalable web applications. 
+              My focus is on developing robust client-side systems that prioritize type safety, component modularity, and efficient rendering. 
+              I specialize in connecting complex backend services with intuitive, high-fidelity user interfaces.
             </p>
 
             <p className="text-muted-foreground">
-              I have a proven track record of managing technical complexity at scale, from 
-              refactoring legacy codebases to implementing modern, server-side rendered architectures. 
-              I am deeply invested in engineering excellence—writing maintainable, testable code, 
-              optimizing performance, and building resilient systems that handle high-concurrency data flows.
+              I have a proven track record of managing technical complexity at scale, from refactoring legacy codebases to implementing modern server-rendered architectures. 
+              I am deeply invested in writing maintainable, testable code, improving performance, and building reliable systems that handle complex, data-driven applications.            
             </p>
 
             {/* Buttons */}
