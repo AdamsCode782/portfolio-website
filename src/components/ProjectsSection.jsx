@@ -210,7 +210,7 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Featured technical demonstrations. Since much of my professional work remains proprietary, and under NDA, these projects serve as a public look into my engineering process.
+          Featured independent projects. Since much of my professional work remains proprietary, and under NDA, these projects serve as a public look into my engineering process.
         </p>
 
         {/* ---- TAG FILTER BUTTONS ---- */}
