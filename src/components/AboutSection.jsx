@@ -12,18 +12,20 @@ export const AboutSection = () => {
           {/* Left side - text */}
           <div className="space-y-6 flex flex-col">
             <h3 className="text-2xl font-semibold">
-              Senior Frontend Engineer
+              Senior Full-Stack Engineer
             </h3>
 
             <p className="text-muted-foreground">
-             I am a Senior Frontend Engineer with eight years of experience building high-performance, scalable web applications. 
-              My focus is on developing robust client-side systems that prioritize type safety, component modularity, and efficient rendering. 
-              I specialize in connecting complex backend services with intuitive, high-fidelity user interfaces.
+              I am a Senior Full-Stack Engineer with eight years of experience building data-driven web applications across government, early-stage startup, 
+              and client-facing environments. My focus is on delivering end-to-end systems spanning React and TypeScript frontends, Node-based APIs, geospatial tools, 
+              and real-time data infrastructure.
             </p>
 
             <p className="text-muted-foreground">
-              I have a proven track record of managing technical complexity at scale, from refactoring legacy codebases to implementing modern server-rendered architectures. 
-              I am deeply invested in writing maintainable, testable code, improving performance, and building reliable systems that handle complex, data-driven applications.            
+              I have worked across the full stack on platforms built for real operational impact, including government reporting systems used for 
+              federal compliance and policy decision-making, AI-powered mental wellbeing apps, and subscription platforms with complex billing workflows. 
+              I care about building maintainable, well-structured systems that translate complex requirements into products people can actually use.
+            
             </p>
 
             {/* Buttons */}
@@ -46,8 +48,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Next.js & React Architecture</h4>
                   <p className="text-muted-foreground">
-                    Architecting modular, type-safe systems. 
-                    I focus on scalable state management, performance and maintainability.
+                    Building modular, type-safe frontend systems with a focus on scalable state management, component architecture, 
+                    and long-term maintainability.
                   </p>
                 </div>
               </div>
@@ -61,8 +63,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">High-Performance Data Systems</h4>
                   <p className="text-muted-foreground">
-                    Transforming complex datasets into interactive interfaces. 
-                    I integrate real-time data streams and visualization tools into production dashboards.
+                    ranslating complex datasets into interactive, high-fidelity interfaces. 
+                    I have built real-time dashboards and data visualization tools used in government operations and production environments.
                   </p>
                 </div>
               </div>
@@ -76,8 +78,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Full-Stack Integration</h4>
                   <p className="text-muted-foreground">
-                    Designing efficient API layers and secure data-fetching strategies. 
-                    I build end-to-end solutions involving schema design, robust authentication, and real-time infrastructure..
+                    Designing efficient API layers and secure data-fetching strategies across the full stack, including schema design, 
+                    authentication systems, and real-time infrastructure for client-facing and internal platforms.
                   </p>
                 </div>
               </div>
