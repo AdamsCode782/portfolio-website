@@ -48,8 +48,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Next.js & React Architecture</h4>
                   <p className="text-muted-foreground">
-                    Building modular, type-safe frontend systems with a focus on scalable state management, component architecture, 
-                    and long-term maintainability.
+                    Building modular, type-safe systems with a focus on scalable state management, performance, and maintainability.
                   </p>
                 </div>
               </div>
@@ -63,8 +62,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">High-Performance Data Systems</h4>
                   <p className="text-muted-foreground">
-                    ranslating complex datasets into interactive, high-fidelity interfaces. 
-                    I have built real-time dashboards and data visualization tools used in government operations and production environments.
+                    Transforming complex datasets into interactive interfaces. 
+                    I've built real-time dashboards and visualization tools used in government and production environments.
                   </p>
                 </div>
               </div>
@@ -78,8 +77,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Full-Stack Integration</h4>
                   <p className="text-muted-foreground">
-                    Designing efficient API layers and secure data-fetching strategies across the full stack, including schema design, 
-                    authentication systems, and real-time infrastructure for client-facing and internal platforms.
+                    Designing efficient API layers and secure data-fetching strategies. 
+                    I build end-to-end solutions involving schema design, authentication, and real-time infrastructure.
                   </p>
                 </div>
               </div>
