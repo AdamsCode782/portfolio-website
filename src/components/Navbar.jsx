@@ -33,8 +33,8 @@ export const Navbar = () => {
         <div className="container flex items-center justify-between">
           {/* Logo */}
           <a className="text-xl font-bold flex items-center gap-2" href="#hero">
-            <span className="text-glow text-foreground">SteeleDesigns</span>
-            <span>Portfolio</span>
+            <span className="text-glow text-foreground">Steele</span>
+            <span>Web Solutions</span>
           </a>
 
           {/* Desktop nav */}
