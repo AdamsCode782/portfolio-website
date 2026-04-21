@@ -44,9 +44,9 @@ I focus on building reliable systems, supporting users in production, and workin
                   <Cpu className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Next.js & React Architecture</h4>
+                  <h4 className="font-semibold text-lg">Product & Feature Development</h4>
                   <p className="text-muted-foreground">
-                    Building modular, type-safe systems with a focus on scalable state management, performance, and maintainability.
+                    I help teams plan, launch, and improve products as they grow, addressing real-world challenges once systems are live.
                   </p>
                 </div>
               </div>
@@ -58,10 +58,10 @@ I focus on building reliable systems, supporting users in production, and workin
                   <Layers className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">High-Performance Data Systems</h4>
+                  <h4 className="font-semibold text-lg">Migrations & Integrations</h4>
                   <p className="text-muted-foreground">
-                    Transforming complex datasets into interactive interfaces. 
-                    I've built real-time dashboards and visualization tools used in government and production environments.
+                    I handle platform migrations and API integrations (Stripe, Mailchimp, OpenAI), 
+                    making sure data moves cleanly and systems stay reliable during transitions.
                   </p>
                 </div>
               </div>
@@ -73,10 +73,9 @@ I focus on building reliable systems, supporting users in production, and workin
                   <Globe className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Full-Stack Integration</h4>
+                  <h4 className="font-semibold text-lg">Live Systems & Support</h4>
                   <p className="text-muted-foreground">
-                    Designing efficient API layers and secure data-fetching strategies. 
-                    I build end-to-end solutions involving schema design, authentication, and real-time infrastructure.
+                    I work in production environments, adding features, resolving issues, and maintaining reliability as usage scales
                   </p>
                 </div>
               </div>
