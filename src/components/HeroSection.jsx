@@ -52,7 +52,7 @@ export const HeroSection = () => {
                         </h1>
 
                         <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-2xl text-muted-foreground max-w-sm md:max-w-2xl mx-auto md:mx-0 opacity-0 animate-fade-in-delay-3 leading-relaxed">
-                          I have worked with <span className="font-semibold text-primary">{displayedText}</span>
+                          I've worked with <span className="font-semibold text-primary">{displayedText}</span>
                           <span className="blinking-caret">|</span> 
                           <span className="inline"> on SaaS products and software solutions.</span>
                         </p>
@@ -76,23 +76,27 @@ export const HeroSection = () => {
                               <ul className="space-y-3 text-sm">
                                     <li className="flex items-center gap-3">
                                           <span className="w-2 h-2 bg-primary rounded-full inline-block"></span>
-                                          Next.js & TypeScript
+                                          Next.js, TypeScript, Node.js & Python
                                     </li>
                                     <li className="flex items-center gap-3">
                                           <span className="w-2 h-2 bg-primary rounded-full inline-block"></span>
-                                          Architectural Design Patterns
+                                          Third-party API integrations
                                     </li>
                                     <li className="flex items-center gap-3">
                                           <span className="w-2 h-2 bg-primary rounded-full inline-block"></span>
-                                          Scalable State Management
+                                          CMS customization and plugin development
                                     </li>
                                     <li className="flex items-center gap-3">
                                           <span className="w-2 h-2 bg-primary rounded-full inline-block"></span>
-                                          Full-Stack API Development
+                                          Platform migrations
                                     </li>
                                     <li className="flex items-center gap-3">
                                           <span className="w-2 h-2 bg-primary rounded-full inline-block"></span>
-                                          High-Fidelity Data Viz
+                                          ETL and data synchronization
+                                    </li>
+                                    <li className="flex items-center gap-3">
+                                          <span className="w-2 h-2 bg-primary rounded-full inline-block"></span>
+                                          CI/CD pipelines and production deployments
                                     </li>
                               </ul>
                         </div>
