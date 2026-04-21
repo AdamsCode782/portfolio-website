@@ -75,7 +75,7 @@ I focus on building reliable systems, supporting users in production, and workin
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Live Systems & Support</h4>
                   <p className="text-muted-foreground">
-                    I work in production environments, adding features, resolving issues, and maintaining reliability as usage scales
+                    I work in production environments, adding features, resolving issues, and maintaining reliability as usage scales.
                   </p>
                 </div>
               </div>
