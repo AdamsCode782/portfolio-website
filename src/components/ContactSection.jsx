@@ -132,7 +132,7 @@ export const ContactSection = () => {
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://linkedin.com/in/adam-steele-design"
+                  href="https://linkedin.com/in/adam-steele-dev"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
