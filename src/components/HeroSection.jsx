@@ -52,7 +52,7 @@ export const HeroSection = () => {
                         </h1>
 
                         <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-2xl text-muted-foreground max-w-sm md:max-w-2xl mx-auto md:mx-0 opacity-0 animate-fade-in-delay-3 leading-relaxed">
-                          I work with <span className="font-semibold text-primary">{displayedText}</span>
+                          I have worked with <span className="font-semibold text-primary">{displayedText}</span>
                           <span className="blinking-caret">|</span> 
                           <span className="inline"> on SaaS products and software solutions.</span>
                         </p>
