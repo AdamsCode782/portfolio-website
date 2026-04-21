@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const adjectives = ["user-facing", "product-focused", "data-driven", "real world"];
+const adjectives = ["creatives", "founders", "civic leaders", "product teams"];
 
 export const HeroSection = () => {
       const [displayedText, setDisplayedText] = useState("");
@@ -52,9 +52,9 @@ export const HeroSection = () => {
                         </h1>
 
                         <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-2xl text-muted-foreground max-w-sm md:max-w-2xl mx-auto md:mx-0 opacity-0 animate-fade-in-delay-3 leading-relaxed">
-                          I build <span className="font-semibold text-primary">{displayedText}</span>
+                          I work with <span className="font-semibold text-primary">{displayedText}</span>
                           <span className="blinking-caret">|</span> 
-                          <span className="inline"> full-stack web applications that balance speed and usability.</span>
+                          <span className="inline"> on SaaS products and software solutions.</span>
                         </p>
 
                         {/* CTA buttons */}
