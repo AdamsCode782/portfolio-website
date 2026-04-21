@@ -12,20 +12,18 @@ export const AboutSection = () => {
           {/* Left side - text */}
           <div className="space-y-6 flex flex-col">
             <h3 className="text-2xl font-semibold">
-              Senior Full-Stack Engineer
+              Senior Software Developer
             </h3>
 
             <p className="text-muted-foreground">
-              I am a Senior Full-Stack Engineer with eight years of experience building data-driven web applications across government, early-stage startup, 
-              and client-facing environments. My focus is on delivering end-to-end systems spanning React and TypeScript frontends, Node-based APIs, geospatial tools, 
-              and real-time data infrastructure.
+                 I'm a Senior Engineer with 8+ years of experience partnering with creators, founders, and civic institutions to build products that solve real problems. 
+  I hold a Master's in Urban Policy and started my career working with government teams, learning how to translate complex stakeholder needs into systems that support real-world operations. 
+  I work with clients over the long term, helping plan, build, and improve products as they grow.
             </p>
 
             <p className="text-muted-foreground">
-              I have worked across the full stack on platforms built for real operational impact, including government reporting systems used for 
-              federal compliance and policy decision-making, AI-powered mental wellbeing apps, and subscription platforms with complex billing workflows. 
-              I care about building maintainable, well-structured systems that translate complex requirements into products people can actually use.
-            
+              I’ve built platforms across the full stack, including real-time messaging systems for 30K+ users, government compliance dashboards used in federal decision-making, subscription platforms with complex billing workflows, and migration infrastructure for creators.
+I focus on building reliable systems, supporting users in production, and working closely with teams over the long term.
             </p>
 
             {/* Buttons */}
