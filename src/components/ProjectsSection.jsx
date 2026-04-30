@@ -46,7 +46,7 @@ const projects = [
     description:
       "A responsive React application that integrates the Google Books API, allowing users to search, save, and manage personalized reading lists.",
     image: "/projects/bookshelf.png",
-    tags: ["React", "API Integration", "JavaScript", "CSS"],
+    tags: ["React", "API Integration", "JavaScript"],
     demoUrl: "https://adamscode782.github.io/bookshelf-react/",
     githubUrl: "https://github.com/AdamsCode782/bookshelf-react",
   },
@@ -156,7 +156,7 @@ const projects = [
     description:
       "A minimalist architecture-firm landing page built with custom CSS and JavaScript, featuring clean layouts and fast performance.",
     image: "/projects/architecture.png",
-    tags: ["JavaScript", "CSS"],
+    tags: ["JavaScript"],
     demoUrl:
       "https://adamscode782.github.io/architecture-landing-website/",
     githubUrl:
